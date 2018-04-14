@@ -1,0 +1,30 @@
+
+NAME
+       fyComp - compress files/folder with zip algorithm
+
+SYNOPSIS
+       fyComp -i <input_file> [-o <output_file>] [-g] [-v]
+
+DESCRIPTION
+       Create zip file your files or folders and add timestamp at end of output file name. Program default exclude your git repository files. if you want include git repos files, use -g parameter
+
+       -i
+              input file/folder name
+
+       -o
+              specific compressed output file name
+
+       -v, --verbose
+              verbose compressed files
+
+       -c, --changelog
+              add change log
+
+       -g, --git
+              include git repsitory files
+
+EXAMPLE
+       
+       fyComp -i fakedir/ -v -o _BACKUPs/fakedir
+       fyComp -i fakedir/ -v -o yedek/fakedir
+       fyComp -i fakedir/ -v -o yedek/fakedir -c "this is fake change log"
